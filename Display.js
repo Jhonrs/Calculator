@@ -15,7 +15,6 @@ class Display{
         };
     }
 
-
     delete(){
         this.currentValue = this.currentValue.toString().slice(0,-1);
         this.printValue();
@@ -54,6 +53,4 @@ class Display{
         if (isNaN(currentValue) || isNaN(lastValue) ) return
         this.currentValue = this.calculator[this.typeOperation](lastValue, currentValue);
     }
-
-    
 }
